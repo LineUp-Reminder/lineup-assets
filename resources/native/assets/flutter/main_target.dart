@@ -38,7 +38,7 @@ Future<void> main() async {
   await FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(true);
   FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterError;
 
-  Injector.configure(Flavor.DEV);
+  Injector.configure(Flavor.[[FLAVOR_NAME]]);
 
   BlocOverrides.runZoned(
     () => runApp(const App()),
