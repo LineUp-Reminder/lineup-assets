@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'flavors.dart';
-import 'view/splash/splashscreen.dart';
+import 'package:line_up/view/splash/splash_screen.dart';
 
 GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 
@@ -10,7 +9,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-	  navigatorKey: navigatorKey,
+      navigatorKey: navigatorKey,
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
     );
